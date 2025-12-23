@@ -32,4 +32,17 @@ func main() {
 	value, ok := m["中国re"]
 	fmt.Println(value, ok)
 
+	user := map[string]User{}
+	user["user_1"] = User{"hello", 19, "user_1"}
+	// 重置
+	user["user_1"] = User{"hello", 19, "user_1_1"}
+
+	fmt.Println(user)
+
+}
+
+type User struct {
+	Name string
+	Age  int
+	Id   string
 }

@@ -12,6 +12,7 @@ func main() {
 	newSlice := make([]int, 0)
 	n := 5
 	copy(newSlice, arr[:n])
+	fmt.Println(newSlice)
 	newSlice = append(newSlice, arr[n+1:]...)
 	fmt.Println(newSlice)
 }
